@@ -1,0 +1,36 @@
+{
+    "name": "Online Arbitrage Tool Lite",
+    "manifest_version": 3,
+    "description": "Auto Query Eligible For Any Amazon FBA Online Arbitrage Deal!",
+    "icons": {
+        "16": "assets/icons/16x16.png",
+        "48": "assets/icons/48x48.png",
+        "128": "assets/icons/128x128.png"
+    },
+    "action": {
+        "default_title": "Online Arbitrage Tool Lite",
+        "default_icon": {
+            "16": "assets/icons/16x16.png",
+            "48": "assets/icons/48x48.png",
+            "128": "assets/icons/128x128.png"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "js": ["content-scripts/index.js"],
+            "matches": [
+                "https://www.amazon.com/*dp/*",
+                "https://www.amazon.com/gp/product/*",
+                "https://www.amazon.com/*s?k=*",
+                "https://www.amazon.com/*s?*"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "host_permissions": ["https://*.amazon.com/"],
+    "author": "tita0x00@gmail.com",
+    "short_name": "O.A.T Lite"
+}
