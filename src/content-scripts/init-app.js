@@ -9,7 +9,7 @@ import {
     INTERVAL_TIME,
 } from '@/utils'
 
-import App from '@/components/App.vue'
+import App from '@/components/v2/App.vue'
 
 export const initApp = () => {
     let loopCount = 0

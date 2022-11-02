@@ -27,6 +27,7 @@ export const STATUS_MAP = {
     UNKNOWN: 4,
     LOADING: 5,
     BUSY: 6,
+    HOVER: 7
 }
 
 // status label map
@@ -47,6 +48,7 @@ export const STATUS_CLASS_MAP = {
     [STATUS_MAP.UNKNOWN]: 'unknown',
     [STATUS_MAP.LOADING]: 'loading',
     [STATUS_MAP.BUSY]: 'busy',
+    [STATUS_MAP.HOVER]: 'hover'
 }
 
 // response code map
